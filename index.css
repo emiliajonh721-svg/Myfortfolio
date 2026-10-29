@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+.containers{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+header{
+    border-bottom: 1px solid gainsboro;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* z-index: 10px; */
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.brand{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: black;
+}
+.nav_link{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.nav_link a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.nav_link a:hover{
+    color: black;
+}
+#hero{
+    padding: 80px 0;
+}
+
+.hero-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+.hero_text{
+    flex: 1;
+}
+.status-badge{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: seagreen;
+    background-color: honeydew;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+.hero-title{
+    font-size: 40px;
+    font-weight: 800px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+.hero-desc{
+    font-size: 17px;
+    color: dimgray;
+    margin-bottom: 28px;
+    max-width: 500px;
+}
+.contact_action{
+    display: flex;
+    gap: 12px;
+}
+.btn-primary{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-primary:hover{
+    background-color: dimgray;
+}
+.btn-secondary{
+    background-color: white;
+    color: black;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-secondary:hover{
+    background-color: whitesmoke;
+}
+.hero_image{
+    flex-shrink: 0;
+}
+.profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 1px solid gainsboro;
+}
+section{
+    padding: 64px 0px;
+}
+.section-label{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    letter-spacing: 1.2px;
+    color: gray;
+    margin-bottom: 6px;
+}
+
+.section-title{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.about_contents{
+    max-width: 700px;
+    font-size: 16px;
+    color: dimgray;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.skills_layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+.skill-box{
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    transition: border-color 0.2s ease;
+}
+.skill-box:hover{
+    border-color: darkgray;
+}
+.skill-box h3{
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: rgb(56, 56, 110);
+}
+.skill-box p{
+    font-size: 13px;
+    color: gray;
+}
+.contact_cards{
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    padding: 32px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact_cards p{
+    color: dimgray;
+    font-size: 15px;
+
+}
+.contact-link{
+    background-color: white;
+    border: 1px solid gainsboro;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+   
+}
+.contact-links{
+   margin-top: 20px;
+   
+}
+.contact-link:hover{
+    background-color: whitesmoke;
+    border-color: darkgray;
+}
+footer{
+    border-top: 1px solid gainsboro;
+    padding: 32px 0px;
+    color: gray;
+    font-size: 13px;
+}
+.containers_footers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media (max-width: 680px){
+    .container_hero_section{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .profile{
+        width: 100px;
+        height: 100px;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    .containers_footers{
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}
